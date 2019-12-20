@@ -7,7 +7,7 @@ const Logout = ({ auth }) => {
 }
 
 Logout.propTypes = {
-  auth: PropTypes.objectOf(PropTypes.any).isRequired
+  auth: PropTypes.objectOf(PropTypes.any).isRequired,
 }
 
 export default Logout

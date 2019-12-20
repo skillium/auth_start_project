@@ -5,7 +5,7 @@ class Profile extends Component {
   constructor() {
     super()
     this.state = {
-      profile: null
+      profile: null,
     }
   }
 
@@ -34,7 +34,7 @@ class Profile extends Component {
 }
 
 Profile.propTypes = {
-  auth: PropTypes.objectOf(PropTypes.object).isRequired
+  auth: PropTypes.objectOf(PropTypes.object).isRequired,
 }
 
 export default Profile

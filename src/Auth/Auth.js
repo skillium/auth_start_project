@@ -1,7 +1,7 @@
 import auth0 from 'auth0-js'
 
 const REDIRECT_ON_LOGIN = 'redirect_on_login'
-let _idToken = null
+// let _idToken = null
 let accessToken = null
 let _expiresAt = null
 let _scopes = []
@@ -17,7 +17,7 @@ class Auth {
       redirectUri: process.env.REACT_APP_AUTH0_CALLBACK,
       audience: process.env.REACT_APP_AUTH0_AUDIENCE,
       responseType: 'token id_token',
-      scope: this.requestedScopes
+      scope: this.requestedScopes,
     })
   }
 
@@ -54,7 +54,7 @@ class Auth {
     const scopes = authResult.scope || this.requestedScopes || ''
 
     accessToken = authResult.accessToken
-    _idToken = authResult.idToken
+    // _idToken = authResult.idToken
     _expiresAt = expiresAt
     _scopes = scopes
     this.scheduleTokenRenewal()
@@ -87,7 +87,7 @@ class Auth {
   logout = () => {
     this.auth0.logout({
       clientID: process.env.REACT_APP_AUTH0_CLIENTID,
-      returnTo: 'http://localhost:3000'
+      returnTo: 'http://localhost:3000',
     })
   }
 

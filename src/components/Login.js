@@ -7,7 +7,7 @@ const Login = ({ auth }) => {
 }
 
 Login.propTypes = {
-  auth: PropTypes.objectOf(PropTypes.any).isRequired
+  auth: PropTypes.objectOf(PropTypes.any).isRequired,
 }
 
 export default Login

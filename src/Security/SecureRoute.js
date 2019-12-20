@@ -33,11 +33,11 @@ const SecureRoute = ({ component: Component, scopes, ...rest }) => {
 
 SecureRoute.propTypes = {
   component: PropTypes.func.isRequired,
-  scopes: PropTypes.shape(PropTypes.array)
+  scopes: PropTypes.shape(PropTypes.array),
 }
 
 SecureRoute.defaultProps = {
-  scopes: []
+  scopes: [],
 }
 
 export default SecureRoute

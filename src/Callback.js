@@ -18,7 +18,7 @@ class Callback extends Component {
 }
 
 Callback.propTypes = {
-  location: PropTypes.shape(PropTypes.object).isRequired
+  location: PropTypes.shape(PropTypes.object).isRequired,
 }
 
 export default Callback

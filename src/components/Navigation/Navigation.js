@@ -12,14 +12,14 @@ import {
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
-  MDBIcon
+  MDBIcon,
 } from 'mdbreact'
 
 class Navigation extends Component {
   constructor() {
     super()
     this.state = {
-      isOpen: false
+      isOpen: false,
     }
   }
 
@@ -78,11 +78,11 @@ class Navigation extends Component {
 }
 
 Navigation.propTypes = {
-  auth: PropTypes.objectOf(PropTypes.any)
+  auth: PropTypes.objectOf(PropTypes.any),
 }
 
 Navigation.defaultProps = {
-  auth: {}
+  auth: {},
 }
 
 export default Navigation

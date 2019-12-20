@@ -17,9 +17,7 @@
     "prettier/prettier": [
       "error",
       {
-        "usePrettierrc": false,
-        "semi": false,
-        "singleQuote": true
+        "usePrettierrc": true
       }
     ]
   },

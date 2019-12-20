@@ -9,7 +9,7 @@ import PublicRoute from './Security/PublicRoute'
 
 import Navigation from './components/Navigation'
 import Public from './components/Public'
-import Profile from './components/Profile'
+// import Profile from './components/Profile'
 import Callback from './Callback'
 import Login from './components/Login'
 import Logout from './components/Logout'
@@ -20,7 +20,7 @@ class App extends Component {
     const { history } = this.props
     auth.history = history
     this.state = {
-      tokenRenewed: false
+      tokenRenewed: false,
     }
   }
 
@@ -49,11 +49,11 @@ class App extends Component {
 }
 
 App.propTypes = {
-  history: PropTypes.objectOf(PropTypes.any)
+  history: PropTypes.objectOf(PropTypes.any),
 }
 
 App.defaultProps = {
-  history: {}
+  history: {},
 }
 
 export default App
